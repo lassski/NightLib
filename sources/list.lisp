@@ -11,7 +11,10 @@
 
 ;(defun rot-left(n l)
 ;  (append (nthcdr n l) (butlast l (- (length l) n))))
-;(let ((lst '(1 2 3 4))) (dotimes (n (length '( (1 2 3 4) (5 6 7 8) (9 10 11 12) ))) (print (list (rot-left n lst)))))
+;(let ((lst '(1 2 3 4)) (lsts '())) 
+;  (dotimes (n (length '( (1 2 3 4) (5 6 7 8) (9 10 11 12) ))) 
+;    (push (rot-left n lst) lsts)) 
+;  (print (nreverse lsts)))
 
 ;(om::defmethod! expand-to-ones ((lst list))
 ; :initvals '(1 2 3 4)    ; an initial values list
